@@ -25,7 +25,7 @@
 
 ## 目标特征
 
-- 路径: `C:\Users\Administrator\AppData\Local\Programs\QianwenApp\qianwen.exe`
+- 路径: `%LOCALAPPDATA%\Programs\QianwenApp\qianwen.exe`
 - 版本: 3.5.2 / 3.7 模型
 - 窗口标题: "千问"
 - 无端口、无 API、纯桌面客户端

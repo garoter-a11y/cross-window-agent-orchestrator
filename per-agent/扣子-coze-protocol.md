@@ -18,16 +18,16 @@
 ```python
 # 写入桌面
 write_file(
-    path="C:/Users/Administrator/Desktop/xiaomo_to_kouzi.txt",
+    path="%USERPROFILE%/Desktop/xiaomo_to_kouzi.txt",
     content="扣子，帮我..."
 )
-# G先生对扣子说：cat C:\Users\Administrator\Desktop\xiaomo_to_kouzi.txt
+# G先生对扣子说：cat %USERPROFILE%\Desktop\xiaomo_to_kouzi.txt
 ```
 
 ## 读取回复
 
 ```python
-read_file("C:/Users/Administrator/Desktop/kouzi_reply.txt")
+read_file("%USERPROFILE%/Desktop/kouzi_reply.txt")
 ```
 
 ## 目标特征

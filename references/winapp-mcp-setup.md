@@ -21,7 +21,7 @@ npm install -g winapp-mcp
 ### 2. 接入 Hermes MCP
 
 ```bash
-hermes mcp add winapp --command "C:/Users/Administrator/AppData/Roaming/npm/node_modules/winapp-mcp/server/WinAppMCP.exe"
+hermes mcp add winapp --command "%APPDATA%/npm/node_modules/winapp-mcp/server/WinAppMCP.exe"
 ```
 
 注意：`hermes mcp add` 有交互式确认（"Enable all 54 tools? [Y/n/select]:"），用 `echo "y" |` 管道自动应答。

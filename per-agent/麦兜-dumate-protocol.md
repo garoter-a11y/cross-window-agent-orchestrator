@@ -18,7 +18,7 @@ DuMate 的聊天输入框是 web 编辑器（contentEditable div），UIA 无法
 ```python
 # 写入 inbox
 write_file(
-    path="C:/Users/Administrator/.qianfan/workspace/<id>/.dumate/inbox/小茉_msg_001.md",
+    path="%USERPROFILE%/.qianfan/workspace/<id>/.dumate/inbox/小茉_msg_001.md",
     content="麦兜，帮我审查..."
 )
 ```
@@ -27,16 +27,16 @@ write_file(
 
 ```python
 # 读 inbox 目录
-ls "C:/Users/Administrator/.qianfan/workspace/<id>/.dumate/inbox/"
+ls "%USERPROFILE%/.qianfan/workspace/<id>/.dumate/inbox/"
 
 # 读回复文件
-read_file("C:/Users/Administrator/.qianfan/workspace/<id>/.dumate/inbox/麦兜_reply_001.md")
+read_file("%USERPROFILE%/.qianfan/workspace/<id>/.dumate/inbox/麦兜_reply_001.md")
 ```
 
 ## 麦兜侧 skill
 
 已安装到 DuMate 的 skills 目录：
-`C:/Users/Administrator/AppData/Local/Programs/DuMate/resources/extra-resource/opencode/skills/小茉路由/SKILL.md`
+`%LOCALAPPDATA%/Programs/DuMate/resources/extra-resource/opencode/skills/小茉路由/SKILL.md`
 
 麦兜回复格式：
 ```yaml

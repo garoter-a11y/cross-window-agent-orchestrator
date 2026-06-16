@@ -1,10 +1,18 @@
-# 小美通信协议 (OpenClaw/Edge)
+# 小美通信协议 (OpenClaw)
 
-> 通道：WinApp MCP `type_text` → Edge 输入框 → ENTER
-> 读取：`get_snapshot` + `find_elements`
+> 通道A（主力）：WebChat 直连 — Hermes 与 OpenClaw WebChat 直接通信，无需过 Edge
+> 通道B（兜底）：WinApp MCP `type_text` → Edge 输入框 → ENTER
 > 状态：✅ 全自动双向通
 
-## 发送消息
+## 通道A：WebChat 直连（推荐）
+
+当 OpenClaw 以 WebChat 模式运行时，小茉（Hermes）可通过内置消息路由直接与小美通信，无需经过桌面输入框。
+
+适用场景：OpenClaw WebChat 窗口已打开，两者在同一上下文。
+
+> 注：此通道不依赖 `msedge` 进程和 WinApp MCP 的 `type_text`，架构允许 Agent 间直连。
+
+## 通道B：Edge 输入框（兜底）
 
 ```python
 # 1. 锁定 Edge 窗口
@@ -23,7 +31,6 @@ mcp_winapp_press_key("RETURN")
 ## 读取回复
 
 ```python
-# 搜索回复内容
 mcp_winapp_find_elements(appId, nameContains="关键词")
 ```
 

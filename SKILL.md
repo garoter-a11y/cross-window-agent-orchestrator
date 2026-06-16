@@ -215,8 +215,8 @@ G先生纠正小茉不是纠事实错误，是纠方向性跑偏。
 | 路径 | 用途 |
 |------|------|
 | `D:\tools\agntebase\blackboard\` | 黑板存档 |
-| `C:\Users\Administrator\Desktop\` | 截图/中间输出/扣子通信 |
-| `C:\Users\Administrator\.dumate\inbox\` | 麦兜文件路由 |
+| `%USERPROFILE%\Desktop\` | 截图/中间输出/扣子通信 |
+| `%USERPROFILE%\.dumate\inbox\` | 麦兜文件路由 |
 | `~/self-improving/domains/multi-agent-coordination.md` | 成长记录 |
 | `~/self-improving/corrections.md` | 纠正记录 |
 

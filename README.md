@@ -51,7 +51,28 @@ A single Chinese character `道` compresses 3000 years of philosophy. English ne
 
 ## Quick Start
 
-See [`references/winapp-mcp-setup.md`](references/winapp-mcp-setup.md)
+**5分钟跑通：**
+
+```bash
+# 1. 安装 WinApp MCP
+npm install -g winapp-mcp
+
+# 2. 列出当前桌面所有窗口
+npx winapp-mcp list_desktop_windows
+
+# 3. 锁定进程并查看UI树
+npx winapp-mcp attach_to_app --process-name notepad
+npx winapp-mcp get_snapshot
+
+# 4. 截图验证
+npx winapp-mcp screenshot --output test.png
+```
+
+详见：[`references/winapp-mcp-setup.md`](references/winapp-mcp-setup.md)
+
+## Security Consideration
+
+WinApp MCP 能读写所有桌面窗口。本系统设计为**本地单人使用**场景，不依赖网络端口、不暴露外部API。若在多用户环境或远程桌面场景下使用，请注意桌面窗口内容可能被其他进程截获。
 
 ## License
 
