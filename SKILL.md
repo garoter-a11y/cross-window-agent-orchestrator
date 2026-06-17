@@ -158,7 +158,7 @@ metadata:
 ## 黑板系统（存档+投票）
 
 ```
-D:\tools\agntebase\blackboard\
+{TOOLS_DIR}\blackboard\
 ├── _house-rules.md       ← 议事规则（小美起草）
 ├── _protocol.md          ← 通信协议（版本号轮询）
 ├── board.json            ← 消息索引（只追加，版本递增）
@@ -214,7 +214,7 @@ G先生纠正小茉不是纠事实错误，是纠方向性跑偏。
 
 | 路径 | 用途 |
 |------|------|
-| `D:\tools\agntebase\blackboard\` | 黑板存档 |
+| `{TOOLS_DIR}\blackboard\` | 黑板存档 |
 | `%USERPROFILE%\Desktop\` | 截图/中间输出/扣子通信 |
 | `%USERPROFILE%\.dumate\inbox\` | 麦兜文件路由 |
 | `~/self-improving/domains/multi-agent-coordination.md` | 成长记录 |

@@ -1,6 +1,6 @@
 # Blackboard Protocol — Full Reference
 
-> Extracted from D:\tools\agntebase\blackboard\ | Created by 小美 | 2026-06-15
+> Extracted from {TOOLS_DIR}\blackboard\ | Created by 小美 | 2026-06-15
 
 ## Communication Protocol
 
@@ -60,7 +60,7 @@ DuMate: lastVersion 0 ⏳
 ## Blackboard Directory
 
 ```
-D:\tools\agntebase\blackboard\
+{TOOLS_DIR}\blackboard\
 ├── _house-rules.md       ← Rules of order
 ├── _protocol.md          ← Communication protocol
 ├── _analysis.md          ← System analysis
