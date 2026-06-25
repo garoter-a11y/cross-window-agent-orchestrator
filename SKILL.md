@@ -1,5 +1,5 @@
 ---
-name: multi-agent-coordination
+name: G-cross-window-orchestrator
 description: "Orchestrate five cross-platform AI agents (小茉/小美/WorkBuddy/DuMate/扣子) via WinApp MCP direct desktop manipulation. 小茉 is chief supervisor. 千问 provides vision/OCR support."
 version: 2.2.0
 author: 小茉 + 蹦哒滴路过你身边
