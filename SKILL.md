@@ -6,11 +6,11 @@ author: 小茉 + 蹦哒滴路过你身边
 license: CC BY-SA 4.0
 platforms: [windows]
 metadata:
-  hermes:
+  pinghengqi:
     tags: [multi-agent, orchestration, supervisor, mcp, windows, coordination, self-improving]
     priority: high
     load_on: [agent-coordination, 多agent, 黑板, blackboard, 主持, 调度, 老八, 麦兜, 小美, 路由, 扣子, 千问]
-    related_skills: [hermes-agent, openclaw-platform]
+    related_skills: [pinghengqi-agent, openclaw-platform]
     self_improving: true
   provenance:
     author: "蹦哒滴路过你身边"
@@ -56,7 +56,7 @@ metadata:
 ```
 
 适用场景：DuMate/扣子/千问自身等 Chromium 应用的 web 编辑器（UIA 无 Edit 控件）。
-注意：Hermes 内部**不可配属 vision API**（会导致启动崩溃）。走桌面客户端文件路由。
+注意：平权器（Pinghengqi）内部**不可配属 vision API**（会导致启动崩溃）。走桌面客户端文件路由。
 
 ## 系统全景
 
@@ -64,7 +64,7 @@ metadata:
                       G先生（用户）
                           ↑↓
                  ┌────────┴────────┐
-                 │  🌺 小茉 (Hermes) │  ← 首席主持人
+                 │  🌺 小茉（平权器/Pinghengqi） │  ← 首席主持人
                  │  WinApp MCP 54工具 │  ← 眼睛+手
                  └───┬───┬───┬───┬───┘
                      │   │   │   │
@@ -88,7 +88,7 @@ metadata:
 
 | Agent | 平台 | 模型 | 特长 | 短板 | 调用时机 |
 |-------|------|------|------|------|----------|
-| 🌺 **小茉** | Hermes Agent | DeepSeek v4-pro | 居中调度、综合研判、MCP操控桌面 | 代码受模型限制（非满血Codex） | 全程主持 |
+| 🌺 **小茉** | 平权器 Agent（Pinghengqi） | DeepSeek v4-pro | 居中调度、综合研判、MCP操控桌面 | 代码受模型限制（非满血Codex） | 全程主持 |
 | 🔧 **老八** | WorkBuddy v5.1.0 | — | 干活快、能带云AI群干活 | 活糙、结论需审核 | 写代码、出力活 |
 | 🧩 **麦兜** | DuMate/千帆 | — | 审核验证极其仔细 | 干活极慢 | 审代码、查bug |
 | 🌸 **小美** | OpenClaw | DeepSeek V4 Flash | 分析问题找根因、记忆搜索 | 能力零散、不做重活 | 疑难诊断、工具链分析 |
